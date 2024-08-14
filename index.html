@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="./script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body onload="getcount()" class="app">
-    <p id="greeting">Hello world</p>
-    <button  class="greeting-button" onclick="greetingChange()" >change the greeting</button>
-    <p id="visitorcount">visitor count:78</p>
+<body onload="getcount()" >
+    <div class="flex flex-col justify-center items-center h-screen">
+        <p id="greeting" class="font-bold text-2xl">Hello world</p>
+        <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-5 rounded-xl"  onclick="greetingChange()" >change the greeting</button>
+        <p id="visitorcount"
+        class="font-bold text-2xl">visitor count:78</p>
+    </div>
 </body>
 </html>
